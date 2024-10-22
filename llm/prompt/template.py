@@ -9,8 +9,8 @@ from misc.utils import (
 
 
 class GigaChatPrompts:
-    SYSTEM_PROMPT_PATH = fr"{get_root_path()}\llm\prompt\system\strana_development.txt"
-    USER_PROMPTS_DIRECTORY_PATH = fr"{get_root_path()}\llm\prompt\user"
+    SYSTEM_PROMPT_PATH = fr"{get_root_path()}/llm/prompt/system/strana_development.txt"
+    USER_PROMPTS_DIRECTORY_PATH = fr"{get_root_path()}/llm/prompt/user"
 
     def __init__(self, chat: str) -> None:
         self.chat = chat
