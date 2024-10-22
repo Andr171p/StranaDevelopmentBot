@@ -4,30 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="106fcc96-2eda-4c3a-b919-bb1d7c834fe8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/StranaDevelopmentBot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bot/handlers/start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bot/keyboards/buttons.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bot/keyboards/main_menu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bot/messages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llm/credentials.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llm/model/giga_chat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llm/prompt/system/strana_development.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llm/prompt/template.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llm/prompt/user/copywriter.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llm/prompt/user/corrector.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llm/prompt/user/email.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llm/prompt/user/redactor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llm/prompt/user/rewriter.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="106fcc96-2eda-4c3a-b919-bb1d7c834fe8" name="Changes" comment="Strana Development Telegram Bot 1.0.0">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/bot/handlers/back.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/bot/handlers/dialog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/bot/handlers/feedback.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/bot/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/bot/states.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bot/handlers/roles.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/handlers/roles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bot/keyboards/roles_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/keyboards/roles_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bot/messages.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/messages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm/model/giga_chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm/model/giga_chat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +33,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -56,10 +52,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.credentials.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.orm.executor": "Run",
+    "Python.settings.executor": "Run",
     "Python.template.executor": "Run",
     "Python.utils.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/andre/StranaDevelopmentBot/llm/prompt"
   }
 }]]></component>
@@ -68,8 +67,8 @@
       <recent name="C:\Users\andre\StranaDevelopmentBot\llm\prompt" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.template">
-    <configuration name="credentials" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="StranaDevelopmentBot" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,11 +77,55 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/llm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/llm/credentials.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="orm" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="StranaDevelopmentBot" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/database" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database/orm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="StranaDevelopmentBot" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/bot" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/bot/settings.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -137,9 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.settings" />
+        <item itemvalue="Python.orm" />
         <item itemvalue="Python.template" />
         <item itemvalue="Python.utils" />
-        <item itemvalue="Python.credentials" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +204,36 @@
       <option name="presentableId" value="Default" />
       <updated>1729595945323</updated>
     </task>
+    <task id="LOCAL-00001" summary="Strana Development Telegram Bot">
+      <option name="closed" value="true" />
+      <created>1729600794747</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729600794747</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Strana Development Telegram Bot">
+      <option name="closed" value="true" />
+      <created>1729600881981</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729600881981</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Strana Development Telegram Bot 1.0.0">
+      <option name="closed" value="true" />
+      <created>1729613584394</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729613584394</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Strana Development Telegram Bot" />
+    <MESSAGE value="Strana Development Telegram Bot 1.0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Strana Development Telegram Bot 1.0.0" />
   </component>
 </project>

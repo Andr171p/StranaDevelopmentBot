@@ -54,3 +54,6 @@ class GigaChatModel:
         answer: BaseMessage = cls.llm(cls.messages)
         cls.messages.append(answer)
         return answer.content
+
+
+giga_chat_model = GigaChatModel()

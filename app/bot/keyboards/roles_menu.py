@@ -4,7 +4,7 @@ from aiogram.types import KeyboardButton
 from aiogram.types import InlineKeyboardMarkup
 from aiogram.types import InlineKeyboardButton
 
-from app.bot.keyboards.buttons import RolesButtons
+from app.bot.keyboards.buttons import RolesButtons, BackButtons
 
 
 async def roles_menu_kb() -> ReplyKeyboardMarkup:
@@ -13,7 +13,8 @@ async def roles_menu_kb() -> ReplyKeyboardMarkup:
         [KeyboardButton(text=RolesButtons.SMM)],
         [KeyboardButton(text=RolesButtons.REDACTOR)],
         [KeyboardButton(text=RolesButtons.EMAIL)],
-        [KeyboardButton(text=RolesButtons.CORRECTOR)]
+        [KeyboardButton(text=RolesButtons.CORRECTOR)],
+        [KeyboardButton(text=BackButtons.BACK)]
     ]
     keyboard = ReplyKeyboardMarkup(
         keyboard=keyboard_list,
